@@ -1,0 +1,81 @@
+
+@font-face {
+    font-family: airport;
+    src: url(../fonts/Airport.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(../font/OKScU8ig.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #E6E6FA, #9370DB);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+}
+.header-text{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    transform: rotate(-5deg);
+    text-shadow: 1px 1px 1px #800080, 2px 2px 3px #4B0082;
+    font-family: airport;
+}
+.conteiner{
+    display: flex;
+    flex-grow: 1;
+}
+nav{
+    margin: 0 30px;
+    position:relative;
+    z-index: 1000;
+}
+nav>ul{
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    margin: 0;
+}
+nav>ul li{
+    display: block;
+    font-family: font2;
+    border: 2px solid #47248E;
+    background: radial-gradient(#98A7ED,#7385DB);
+    border-radius: 10px;
+    height:50px;
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1px;
+}
+li div{
+    width: 90%;
+    text-align: center;
+}
+nav>ul li div:hover{
+    cursor: pointer;
+    color: white;
+}
+.content{
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid #47248E;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 2px 5px 10px 40px;
+}
+footer{
+    height: 40px;
+}
